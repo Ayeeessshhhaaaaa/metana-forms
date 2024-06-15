@@ -1,5 +1,5 @@
 import React from 'react';
-import './question3.scss';
+import '../question.scss';
 
 
 const Question3 = () => {
@@ -13,7 +13,12 @@ const Question3 = () => {
     <div className="question-content">
       <form>
         <div className="form-group">
-          <input type="text" className="form-control form-input" id="email" placeholder="Type or select an option" />
+            <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+              <option selected>Type or select a option</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
         </div>
         <div className="button-container">
           <button type="submit" className="btn btn-primary submit-button">OK</button>

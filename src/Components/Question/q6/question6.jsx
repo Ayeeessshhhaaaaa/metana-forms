@@ -1,25 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './question6.scss';
 
 
 const Question6 = () => {
-  const [selectedOptions, setSelectedOptions] = useState([]);
-
-  const handleCheckboxChange = (e) => {
-    const value = e.target.value;
-    setSelectedOptions((prevSelectedOptions) =>
-      prevSelectedOptions.includes(value)
-        ? prevSelectedOptions.filter((option) => option !== value)
-        : [...prevSelectedOptions, value]
-    );
-  };
-
-  const onSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission, e.g., save the selected options
-    console.log('Selected options:', selectedOptions);
-  };
-
   return (
     <div className='question6'>
     <div className="question-title">
@@ -31,23 +14,23 @@ const Question6 = () => {
       <form>
         <div className="form-group">
             <div className="custom-radio">
-                  <input type="checkbox" id="exp-1" value="No experience" onChange={handleCheckboxChange} />
+                  <input type="radio" id="exp-1" value="No experience" name="experience" onChange={(e) => setSelectedOption(e.target.value)} />
                   <label htmlFor="exp-1" className="custom-control-label"><span>A</span>No experience (I have never programmed before.)</label>
             </div>
             <div className="custom-radio">
-              <input type="checkbox" id="exp-2" value="Beginner" onChange={handleCheckboxChange} />
+              <input type="radio" id="exp-2" value="Beginner" name="experience" onChange={(e) => setSelectedOption(e.target.value)} />
               <label htmlFor="exp-2" className="custom-control-label"><span>B</span>Beginner (I have played with some introductory coding lessons and tutorials.)</label>
             </div>
             <div className="custom-radio">
-              <input type="checkbox" id="exp-3" value="Intermediate" onChange={handleCheckboxChange} />
+              <input type="radio" id="exp-3" value="Intermediate" name="experience" onChange={(e) => setSelectedOption(e.target.value)} />
               <label htmlFor="exp-3" className="custom-control-label"><span>C</span>Intermediate (I have completed some coding classes or tutorials.)</label>
             </div>
             <div className="custom-radio">
-              <input type="checkbox" id="exp-4" value="Advanced" onChange={handleCheckboxChange} />
+              <input type="radio" id="exp-4" value="Advanced" name="experience" onChange={(e) => setSelectedOption(e.target.value)} />
               <label htmlFor="exp-4" className="custom-control-label"><span>D</span>Advanced (I can build applications.)</label>
             </div>
             <div className="custom-radio">
-              <input type="checkbox" id="exp-5" value="Professional" onChange={handleCheckboxChange} />
+              <input type="radio" id="exp-5" value="Professional" name="experience" onChange={(e) => setSelectedOption(e.target.value)} />
               <label htmlFor="exp-5" className="custom-control-label"><span>E</span>Professional (I am an experienced software engineer.)</label>
             </div>
         </div>

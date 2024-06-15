@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './question5.scss';
+import '../question.scss';
 
 const Question5 = () => {
   const [selectedOptions, setSelectedOptions] = useState([]);

@@ -1,11 +1,13 @@
-import React from 'react';
-import './question2.scss';
+import React from "react";
+import "../question.scss";
 
 const Question2 = () => {
   return (
-    <div className='question'>
+    <div className="question">
       <div className="question-title">
-        <span>2<span class="material-symbols-outlined">arrow_right_alt</span></span>
+        <span>
+          2<span class="material-symbols-outlined">arrow_right_alt</span>
+        </span>
         What's your email address?
       </div>
 
@@ -13,10 +15,17 @@ const Question2 = () => {
         <form>
           <span>This is how we'll contact you</span>
           <div className="form-group">
-            <input type="text" className="form-control form-input" id="email" placeholder="name@example.com" />
+            <input
+              type="text"
+              className="form-control form-input"
+              id="email"
+              placeholder="name@example.com"
+            />
           </div>
           <div className="button-container">
-            <button type="submit" className="btn btn-primary submit-button">OK</button>
+            <button type="submit" className="btn btn-primary submit-button">
+              OK
+            </button>
             <div className="support-text">
               press <strong>Enter ↵</strong>
             </div>
@@ -24,7 +33,7 @@ const Question2 = () => {
         </form>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Question2
+export default Question2;
