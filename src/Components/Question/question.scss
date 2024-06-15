@@ -4,6 +4,7 @@
   .question-title {
     display: flex;
     align-items: center;
+
     span {
       color: #cf9fff;
       display: flex;
@@ -14,10 +15,18 @@
   }
 
   .question-content {
-    padding: 20px;
     text-align: left;
     width: 100%;
-    margin-left: 24px;
+    margin-left: 45px;
+    font-weight: 500;
+    color: #939294;
+    font-size: 22px;
+
+    .form-group-row{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
 
     /* question8.scss */
     .custom-radio {
@@ -76,8 +85,10 @@
       color: #cf9fff;
     }
 
+    
+
     .form-input {
-      font-size: 18px;
+      font-size: 24px;
       color: #cf9fff;
       border: none;
       border-bottom: 2px solid #e9d4ff;
@@ -89,7 +100,7 @@
     }
 
     .form-input::placeholder {
-      color: #e9d4ff; /* Change this color to match your design */
+      color: #e9d4ff;
     }
 
     .form-input:focus {
@@ -112,6 +123,7 @@
         border-radius: 5px;
         transition: background-color 0.3s;
         margin-right: 6px;
+        font-weight: bold;
       }
 
       .submit-button:hover {
@@ -120,8 +132,8 @@
 
       .support-text {
         margin-top: 10px;
-        font-size: 14px;
-        color: #6c757d;
+        font-size: 12px;
+        color: black;
       }
     }
   }

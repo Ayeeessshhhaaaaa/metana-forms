@@ -57,6 +57,10 @@
           border: none;
           padding: 8px 18px;
 
+          &:hover {
+            background-color: #dab4ff;
+          }
+
           span{
             font-family: 'Lexend Deca';
             font-style: normal;

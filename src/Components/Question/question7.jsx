@@ -24,19 +24,19 @@ const Question7 = () => {
           </div>
           <div className="custom-radio">
             <input type="radio" id="accept" name="certify" value="accept" className="custom-control-input" onChange={(e) => setSelectedOption(e.target.value)} />
-            <label htmlFor="accept" className="custom-control-label"><span>A</span>$50,000 - $80,000</label>
+            <label htmlFor="accept" className="custom-control-label"><span>C</span>$50,000 - $80,000</label>
           </div>
           <div className="custom-radio">
             <input type="radio" id="dont-accept" name="certify" value="dont-accept" className="custom-control-input" onChange={(e) => setSelectedOption(e.target.value)} />
-            <label htmlFor="dont-accept" className="custom-control-label"><span>B</span>$80,000 - $120,000</label>
+            <label htmlFor="dont-accept" className="custom-control-label"><span>D</span>$80,000 - $120,000</label>
           </div>
           <div className="custom-radio">
             <input type="radio" id="accept" name="certify" value="accept" className="custom-control-input" onChange={(e) => setSelectedOption(e.target.value)} />
-            <label htmlFor="accept" className="custom-control-label"><span>A</span>$1200,000 - $250,000</label>
+            <label htmlFor="accept" className="custom-control-label"><span>E</span>$1200,000 - $250,000</label>
           </div>
           <div className="custom-radio">
             <input type="radio" id="dont-accept" name="certify" value="dont-accept" className="custom-control-input" onChange={(e) => setSelectedOption(e.target.value)} />
-            <label htmlFor="dont-accept" className="custom-control-label"><span>B</span>$250,000 or more</label>
+            <label htmlFor="dont-accept" className="custom-control-label"><span>F</span>$250,000 or more</label>
           </div>
         </div>
         <div className="button-container">
