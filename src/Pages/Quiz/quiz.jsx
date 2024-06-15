@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import './quiz.scss';
 
-import Question1 from '../../Components/Question/question1';
-import Question2 from '../../Components/Question/question2';
-import Question3 from '../../Components/Question/question3';
-import Question4 from '../../Components/Question/question4';
-import Question5 from '../../Components/Question/question5';
-import Question6 from '../../Components/Question/question6';
-import Question7 from '../../Components/Question/question7';
-import Question8 from '../../Components/Question/question8';
+import Question1 from '../../Components/Question/q1/question1';
+import Question2 from '../../Components/Question/q2/question2';
+import Question3 from '../../Components/Question/q3/question3';
+import Question4 from '../../Components/Question/q4/question4';
+import Question5 from '../../Components/Question/q5/question5';
+import Question6 from '../../Components/Question/q6/question6';
+import Question7 from '../../Components/Question/q7/question7';
+import Question8 from '../../Components/Question/q8/question8';
 import Question9 from '../../Components/Question/question9';
 
 const questionComponents = [

@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import './question4.scss';
 
 const Question4 = () => {
   return (
-    <div className='question'>
+    <div className='question4'>
     <div className="question-title">
       <span>4<span class="material-symbols-outlined">arrow_right_alt</span></span>
         What is your phone number?
