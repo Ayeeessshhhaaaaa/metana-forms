@@ -1,0 +1,19 @@
+.header{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 32px;
+    position: absolute;
+    top: 0;
+
+    .header-image-component{
+
+        .logo{
+            max-width: 120px;
+            max-height: 40px;
+            width: auto;
+            height: auto;
+        }
+    }
+}

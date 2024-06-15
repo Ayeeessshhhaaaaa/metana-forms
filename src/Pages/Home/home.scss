@@ -1,24 +1,95 @@
-.home {
+.home-container {
     padding: 20px;
-  }
-  
-  .logo {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    width: 150px;
-    height: auto;
-  }
-  
-  .content {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    .col{
+      width: 50%;
+      font-size: 16px;
+      display: flex;
+      flex-direction: column;
+      padding-inline-start: 50px;
+      padding-inline-end: 70px;
+
+      .image-container{
+        .image{
+          display: block;
+          margin: 0px auto;
+          height: 318px;
+          width: 524.96281px;
+        }
+      }
+
+      h1 {
+        font-family: 'Lexend Deca';
+        font-size: 36px;
+        line-height: 44px;
+        color: rgb(25, 27, 51);
+        overflow-wrap: break-word;
+        font-weight: bold;
+        text-align: start;
+      }
+      p{
+        margin-top: 0px;
+        max-width: 100%;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        color: rgba(25, 27, 51, 0.7);
+        overflow-wrap: break-word;
+      }
+
+      .button-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+
+        button{
+          background-color: #CF9FFF;
+          border-radius: 4px;
+          border: none;
+          padding: 8px 18px;
+
+          span{
+            font-family: 'Lexend Deca';
+            font-style: normal;
+            font-display: swap;
+            font-weight: 700;
+            font-size: 24px;
+            cursor: pointer;
+            color: #ffffff;
+          }
+        }
+        .support-text{
+          font-family: 'Lexend Deca';
+          font-style: normal;
+          font-display: swap;
+          font-weight: 400;
+          font-size: 12px;
+          cursor: pointer;
+        }
+      }
+
+      .people-filled{
+        display: flex;
+        align-items: center;
+        margin-top: 8px;
+
+        span{
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 20px;
+          color: rgb(25, 27, 51);
+        }
+      }
+      
+    }
   }
   
-  .left-column, .right-column {
-    width: 50%;
-    padding: 80px;
-  }
   
   .left-column {
     h1 {
@@ -43,21 +114,7 @@
       }
     }
   
-    .start-button {
-      background-color: #CF9FFF;
-      border-radius: 8px;
-      border: none;
-      padding: 10px 20px;
-      font-family: 'Lexend Deca';
-      font-style: normal;
-      font-display: swap;
-      font-weight: 800;
-      font-size: 24px;
-      cursor: pointer;
-      margin-top: 20px;
-      color: #ffffff;
-    }
-  
+
     .people-filled {
       display: flex;
       align-items: center;
@@ -67,78 +124,5 @@
       font-weight:bold;
     }
   }
-  
-  .right-column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  
-    .rating-image {
-      position: relative;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-  
-      .course-rating {
-        font-family: 'Lexend Deca';
-        font-style: normal;
-        font-display: swap;
-        font-weight: 900;
-        font-size: 200px;
-        color: #D9D9D9;
-      }
-  
-      .rating-text {
-        position: absolute;
-        top: 15px;
-        text-align: center;
-  
-        .rated-on {
-          font-family: 'Lexend Deca';
-          font-style: normal;
-          font-display: swap;
-          font-weight: 600;
-          font-size: 45px;
-          color: #F2A43A;
-          margin-bottom: -50px;
-        }
-  
-        .course-report {
-          font-family: 'Lexend Deca';
-          font-style: normal;
-          font-display: swap;
-          font-weight: 600;
-          font-size: 45px;
-          color: #7CDB4D;
-        }
-      }
-    }
-  
-    .students-work {
-      font-family: 'Lexend Deca';
-      font-style: normal;
-      font-display: swap;
-      font-weight: 800;
-      font-size: 24px;
-      color: #1F316A;
-      margin-top: 0px;
-      text-align: center;
-  
-      .underline {
-        text-decoration: underline;
-        text-decoration-color: #CFFB06;
-        text-decoration-thickness: 5px;
-      }
-    }
-  
-    .company-logos {
-      display: flex;
-      gap: 50px;
-  
-      img {
-        width: 80px;
-        height: auto;
-      }
-    }
-  }
-  
+    
+

@@ -1,46 +1,47 @@
-import React from 'react';
-import './home.scss';
-import logo from '../../assets/logo.png';
-import googleLogo from '../../assets/google.png';
-import ibmLogo from '../../assets/IBM.png';
-import nikeLogo from '../../assets/nike.png';
-import ebayLogo from '../../assets/ebay.png';
+import React from "react";
+import "./home.scss";
+import googleLogo from "../../assets/google.png";
+import ibmLogo from "../../assets/IBM.png";
+import nikeLogo from "../../assets/nike.png";
+import ebayLogo from "../../assets/ebay.png";
 
 const Home = () => {
   return (
-    <div className="home">
-      <img src={logo} alt="Logo" className="logo" />
-      <div className="content">
-        <div className="left-column">
-          <h1>Launch your Data Career in Weeks, not Years</h1>
-          <p>
-            What to expect:<br />
-            - <span className="highlight">  Short-answer </span> questions & <span className="highlight">No</span> cover letter <br />
-            - Takes 4 mins on average
-          </p>
-          <button className="start-button">Start Your Journey</button>
-          <div className="people-filled">
-            <span className="material-icons-outlined">
-              group
-            </span>
-            <span>35 people have filled this out</span>
+    <div className="home-container">
+      <div className="col">
+        <h1>
+          <strong>Launch your Data Career in Weeks, not Years</strong>
+        </h1>
+        <p>
+          <span>What to expect:</span>
+          <br></br>
+          <span>- </span>
+          <strong>Short-answer</strong>
+          <span> questions &amp; </span>
+          <strong>No</strong>
+          <span> cover letter</span>
+          <br></br>
+          <span>- Takes 4 mins on average</span>
+        </p>
+        <div className="button-container">
+          <button><span>Start Your Journey</span></button>
+          <div className="support-text">
+            press <strong>Enter ↵</strong>
           </div>
         </div>
-        <div className="right-column">
-          <div className="rating-image">
-            <span className="course-rating">4.8</span>
-            <div className="rating-text">
-              <p className="rated-on">Rated on</p>
-              <p className="course-report">Course Report</p>
-            </div>
-          </div>
-          <p className="students-work">Our students <span className="underline">used</span> to work at</p>
-          <div className="company-logos">
-            <img src={googleLogo} alt="Google Logo" />
-            <img src={ibmLogo} alt="IBM Logo" />
-            <img src={nikeLogo} alt="Nike Logo" />
-            <img src={ebayLogo} alt="Ebay Logo" />
-          </div>
+        <div className="people-filled">
+          <span className="material-icons-outlined">group</span>
+          <span>86 people have filled this out</span>
+        </div>
+      </div>
+
+      <div className="col">
+        <div className="image-container">
+          <img
+            src="https://images.typeform.com/images/RpFYn8rh9zhf/image/default"
+            alt="metaform home image"
+            className="image"
+          />
         </div>
       </div>
     </div>
