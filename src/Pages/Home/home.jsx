@@ -1,13 +1,16 @@
 import React from "react";
 import "./home.scss";
-import googleLogo from "../../assets/google.png";
-import ibmLogo from "../../assets/IBM.png";
-import nikeLogo from "../../assets/nike.png";
-import ebayLogo from "../../assets/ebay.png";
+import { useNavigate } from "react-router-dom";
+
 
 const Home = () => {
+  const navigate = useNavigate();
+
+  const handleStartJourney = () => {
+    navigate("/quiz");
+  };
   return (
-    <div className="home-container">
+    <div className="home-container row">
       <div className="col">
         <h1>
           <strong>Launch your Data Career in Weeks, not Years</strong>
@@ -24,7 +27,7 @@ const Home = () => {
           <span>- Takes 4 mins on average</span>
         </p>
         <div className="button-container">
-          <button><span>Start Your Journey</span></button>
+          <button onClick={handleStartJourney}><span>Start Your Journey</span></button>
           <div className="support-text">
             press <strong>Enter ↵</strong>
           </div>

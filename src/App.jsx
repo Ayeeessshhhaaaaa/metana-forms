@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Pages/Home/home';
+import Quiz from './Pages/Quiz/quiz';
 import Header from './Components/Header/header';
 import Loader from './Components/Loader/loader';
 
@@ -21,6 +22,7 @@ const App = () => {
         <div className="content">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/quiz" element={<Quiz />} />
           </Routes>
         </div>
         </div>}
