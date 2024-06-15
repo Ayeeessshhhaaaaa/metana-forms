@@ -4,6 +4,7 @@ import Home from './Pages/Home/home';
 import Quiz from './Pages/Quiz/quiz';
 import Header from './Components/Header/header';
 import Loader from './Components/Loader/loader';
+import './App.css';
 
 const App = () => {
   const [loading, setLoading] = useState(true);

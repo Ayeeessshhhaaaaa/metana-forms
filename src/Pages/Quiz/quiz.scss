@@ -9,7 +9,11 @@
         justify-content: center;
     }
 
-    .question {
+    .questions {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        text-align: center;
         font-size: 24px;
         font-weight: bold;
         margin: 20px 0;
@@ -18,15 +22,29 @@
         animation: slideIn 0.5s forwards;
       }
 
-
-    @keyframes slideIn {
+      @keyframes slideInFromBottom {
+        from {
+          opacity: 0;
+          transform: translateY(100%);
+        }
         to {
           opacity: 1;
           transform: translateY(0);
         }
       }
       
-      @keyframes slideOut {
+      @keyframes slideInFromTop {
+        from {
+          opacity: 0;
+          transform: translateY(-100%);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      
+      @keyframes slideOutToTop {
         from {
           opacity: 1;
           transform: translateY(0);
@@ -37,12 +55,31 @@
         }
       }
       
-      .slideIn {
-        animation: slideIn 0.5s forwards;
+      @keyframes slideOutToBottom {
+        from {
+          opacity: 1;
+          transform: translateY(0);
+        }
+        to {
+          opacity: 0;
+          transform: translateY(100%);
+        }
       }
       
-      .slideOut {
-        animation: slideOut 0.5s forwards;
+      .slideInFromBottom {
+        animation-name: slideInFromBottom;
+      }
+      
+      .slideInFromTop {
+        animation-name: slideInFromTop;
+      }
+      
+      .slideOutToTop {
+        animation-name: slideOutToTop;
+      }
+      
+      .slideOutToBottom {
+        animation-name: slideOutToBottom;
       }
 
       
