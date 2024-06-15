@@ -1,4 +1,5 @@
 import React from 'react'
+import './question.scss';
 
 const question8 = () => {
   return (
@@ -14,7 +15,14 @@ const question8 = () => {
           I hereby acknowledge that this application form was completed by me (the individual seeking to enroll in Metana) and I did not receive help from any external sources. The responses submitted are entirely my own and based on my own reasoning. Also, I opt in to receive communication messages from Metana about my application.
         </span>
         <div className="form-group">
-          <input type="text" className="form-control form-input" id="email" placeholder="Type or select an option" />
+          <div className="custom-radio">
+            <input type="radio" id="accept" name="certify" value="accept" className="custom-control-input" onChange={(e) => setSelectedOption(e.target.value)} />
+            <label htmlFor="accept" className="custom-control-label"><span>A</span> I accept</label>
+          </div>
+          <div className="custom-radio">
+            <input type="radio" id="dont-accept" name="certify" value="dont-accept" className="custom-control-input" onChange={(e) => setSelectedOption(e.target.value)} />
+            <label htmlFor="dont-accept" className="custom-control-label"><span>B</span> I don't accept</label>
+          </div>
         </div>
         <div className="button-container">
           <button type="submit" className="btn btn-primary submit-button">OK</button>
