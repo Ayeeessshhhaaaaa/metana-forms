@@ -38,27 +38,27 @@ const Question5 = () => {
           </div>
 
           <div className="custom-radio">
-            <input type="radio" id="accept" name="certify" value="accept" className="custom-control-input" onChange={(e) => setSelectedOption(e.target.value)} />
+            <input type="checkbox" id="accept" name="certify" value="accept" className="custom-control-input" onChange={(e) => setSelectedOption(e.target.value)} />
             <label htmlFor="accept" className="custom-control-label"><span>A</span>$30,000</label>
           </div>
 
           <div className="custom-radio">
-            <input type="radio" id="accept" name="certify" value="accept" className="custom-control-input" onChange={(e) => setSelectedOption(e.target.value)} />
+            <input type="checkbox" id="accept" name="certify" value="accept" className="custom-control-input" onChange={(e) => setSelectedOption(e.target.value)} />
             <label htmlFor="accept" className="custom-control-label"><span>A</span>$30,000</label>
           </div>
 
           <div className="custom-radio">
-            <input type="radio" id="accept" name="certify" value="accept" className="custom-control-input" onChange={(e) => setSelectedOption(e.target.value)} />
+            <input type="checkbox" id="accept" name="certify" value="accept" className="custom-control-input" onChange={(e) => setSelectedOption(e.target.value)} />
             <label htmlFor="accept" className="custom-control-label"><span>A</span>$30,000</label>
           </div>
 
           <div className="custom-radio">
-            <input type="radio" id="accept" name="certify" value="accept" className="custom-control-input" onChange={(e) => setSelectedOption(e.target.value)} />
+            <input type="checkbox" id="accept" name="certify" value="accept" className="custom-control-input" onChange={(e) => setSelectedOption(e.target.value)} />
             <label htmlFor="accept" className="custom-control-label"><span>A</span>$30,000</label>
           </div>
 
           <div className="custom-radio">
-            <input type="radio" id="accept" name="certify" value="accept" className="custom-control-input" onChange={(e) => setSelectedOption(e.target.value)} />
+            <input type="checkbox" id="accept" name="certify" value="accept" className="custom-control-input" onChange={(e) => setSelectedOption(e.target.value)} />
             <label htmlFor="accept" className="custom-control-label"><span>A</span>$30,000</label>
           </div>
 
