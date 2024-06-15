@@ -1,5 +1,5 @@
 .home-container {
-    padding: 20px;
+    padding: 10px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -11,26 +11,27 @@
       font-size: 16px;
       display: flex;
       flex-direction: column;
-      padding-inline-start: 50px;
-      padding-inline-end: 70px;
+      padding-inline-start: 10px;
+      padding-inline-end: 5px;
 
       .image-container{
         .image{
           display: block;
           margin: 0px auto;
-          height: 318px;
-          width: 524.96281px;
+          height: 345x;
+          width: 600px;
         }
       }
 
       h1 {
         font-family: 'Lexend Deca';
         font-size: 36px;
-        line-height: 44px;
+        line-height: 48px;
         color: rgb(25, 27, 51);
         overflow-wrap: break-word;
         font-weight: bold;
         text-align: start;
+        margin-bottom: 20px;
       }
       p{
         margin-top: 0px;
@@ -40,6 +41,7 @@
         line-height: 28px;
         color: rgba(25, 27, 51, 0.7);
         overflow-wrap: break-word;
+        text-align: left;
       }
 
       .button-container{
@@ -47,6 +49,7 @@
         flex-direction: row;
         align-items: center;
         gap: 20px;
+        margin-top: 20px;
 
         button{
           background-color: #CF9FFF;
