@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import '../question.scss';
+import './question5.scss';
 
-const Question5 = () => {
+const Question5 = ({ handleNext }) => {
   const [selectedOptions, setSelectedOptions] = useState([]);
 
   const handleCheckboxChange = (e) => {
@@ -19,6 +19,11 @@ const Question5 = () => {
     console.log('Selected options:', selectedOptions);
   };
 
+  const handleSubmit = (event) => {
+    event.preventDefault(); // Prevent the form from reloading the page
+    handleNext(); // Call the handleNext function to go to the next question
+  };
+
   return (
     <div className='question'>
       <div className="question-title">
@@ -27,7 +32,7 @@ const Question5 = () => {
       </div>
 
       <div className="question-content">
-        <form onSubmit={onSubmit}>
+        <form onSubmit={handleSubmit}>
           <span>
           Select all the languages you know.
           </span>

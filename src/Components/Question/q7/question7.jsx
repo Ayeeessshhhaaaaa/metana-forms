@@ -2,7 +2,11 @@ import React from 'react';
 import './question7.scss';
 
 
-const Question7 = () => {
+const Question7 = ({ handleNext }) => {
+  const handleSubmit = (event) => {
+    event.preventDefault(); // Prevent the form from reloading the page
+    handleNext(); // Call the handleNext function to go to the next question
+  };
   return (
     <div className='question'>
     <div className="question-title">
@@ -11,7 +15,7 @@ const Question7 = () => {
     </div>
 
     <div className="question-content">
-      <form>
+    <form onSubmit={handleSubmit}>
         <span>
         Disclaimer: The information provided regarding salary will be kept confidential and will not be used as a determining factor for acceptance into the bootcamp. It will be used exclusively for career advancement guidance.
         </span>

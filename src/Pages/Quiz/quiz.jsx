@@ -9,22 +9,9 @@ import Question5 from '../../Components/Question/q5/question5';
 import Question6 from '../../Components/Question/q6/question6';
 import Question7 from '../../Components/Question/q7/question7';
 import Question8 from '../../Components/Question/q8/question8';
-import Question9 from '../../Components/Question/question9';
-
-const questionComponents = [
-  <Question1 key="1" />,
-  <Question2 key="2" />,
-  <Question3 key="3" />,
-  <Question4 key="4" />,
-  <Question5 key="5" />,
-  <Question6 key="5" />,
-  <Question7 key="5" />,
-  <Question8 key="5" />,
-  <Question9 key="5" />,
-];
+import Question9 from '../../Components/Question/q9/question9';
 
 const Quiz = () => {
-
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [animationClass, setAnimationClass] = useState('slideInFromBottom');
   const [direction, setDirection] = useState('forward');
@@ -56,19 +43,33 @@ const Quiz = () => {
     }
   };
 
+  const questionComponents = [
+    <Question1 key="1" handleNext={handleNext} />,
+    <Question2 key="2" handleNext={handleNext} />,
+    <Question3 key="3" handleNext={handleNext} />,
+    <Question4 key="4" handleNext={handleNext} />,
+    <Question5 key="5" handleNext={handleNext} />,
+    <Question6 key="6" handleNext={handleNext} />,
+    <Question7 key="7" handleNext={handleNext} />,
+    <Question8 key="8" handleNext={handleNext} />,
+    <Question9 key="9" handleNext={handleNext} />,
+  ];
+
   return (
     <div className='quiz-container'>
-
       <div className="questions-container">
-         <div className={`questions ${animationClass}`}>
+        <div className={`questions ${animationClass}`}>
           {questionComponents[currentQuestionIndex]}
-         </div>
+        </div>
       </div>
-
       <div className="bottom-control">
         <div className="btn-group" role="group" aria-label="Basic example">
-          <button type="button" className="btn btn-primary" onClick={handlePrevious} disabled={currentQuestionIndex === 0}><span class="material-symbols-outlined">keyboard_arrow_up</span></button>
-          <button type="button" className="btn btn-primary"><span class="material-symbols-outlined" onClick={handleNext} disabled={currentQuestionIndex === questionComponents.length - 1}>keyboard_arrow_down</span></button>
+          <button type="button" className="btn btn-primary" onClick={handlePrevious} disabled={currentQuestionIndex === 0}>
+            <span className="material-symbols-outlined">keyboard_arrow_up</span>
+          </button>
+          <button type="button" className="btn btn-primary" onClick={handleNext} disabled={currentQuestionIndex === questionComponents.length - 1}>
+            <span className="material-symbols-outlined">keyboard_arrow_down</span>
+          </button>
         </div>
         <a className="btn btn-primary" href="#" role="button">Powered by <strong>Typeform</strong></a>
       </div>
@@ -76,4 +77,4 @@ const Quiz = () => {
   )
 }
 
-export default Quiz
+export default Quiz;

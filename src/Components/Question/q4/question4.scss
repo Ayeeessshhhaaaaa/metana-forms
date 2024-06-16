@@ -1,84 +1,135 @@
-.question4 {
-    max-width: 100%;
-    min-width: 500px;
-    .question-title {
-      display: flex;
-      align-items: center;
-  
-      span {
-        color: #cf9fff;
-        display: flex;
-        align-items: center;
-        font-size: 20px;
-        margin-right: 6px;
-      }
-    }
-  
-    .question-content {
-      text-align: left;
-      width: 100%;
-      margin-left: 45px;
-      font-weight: 500;
-      color: #939294;
-      font-size: 22px;
+/* question4.scss */
+.question {
+  text-align: left;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
 
-  
-      .form-label {
-        font-size: 18px;
-        font-weight: bold;
-        color: #cf9fff;
-      }
-  
-  
-      .form-input {
-        font-size: 24px;
-        color: #cf9fff;
-        border: none;
-        border-bottom: 2px solid #e9d4ff;
-        border-radius: 0;
-        background-color: transparent;
-        padding: 10px 0;
-        transition: border-color 0.3s;
-        width: 100%;
-      }
-  
-      .form-input::placeholder {
-        color: #e9d4ff;
-      }
-  
-      .form-input:focus {
-        border-color: #cf9fff;
-        box-shadow: none;
-      }
-  
-      .button-container {
-        display: flex;
-        flex-direction: row;
-        margin-top: 42px;
-  
-        .submit-button {
-          background-color: #cf9fff;
-          border: none;
-          color: white;
-          padding: 6px 20px;
-          font-size: 18px;
-          cursor: pointer;
-          border-radius: 5px;
-          transition: background-color 0.3s;
-          margin-right: 6px;
-          font-weight: bold;
-        }
-  
-        .submit-button:hover {
-          background-color: #dab4ff;
-        }
-  
-        .support-text {
-          margin-top: 10px;
-          font-size: 12px;
-          color: black;
-        }
-      }
-    }
-  }
-  
+.question-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.question-title .material-symbols-outlined {
+  margin-right: 10px;
+}
+
+.question-content {
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.css-2b097c-container {
+  width: auto;
+  flex: 1;
+}
+
+.phone-input {
+  font-size: 24px;
+  color: #cf9fff;
+  border: none;
+  border-bottom: 2px solid #e9d4ff;
+  border-radius: 0;
+  background-color: transparent;
+  padding: 10px;
+  margin-left: 10px;
+  flex: 2;
+}
+
+.phone-input::placeholder {
+  color: #e9d4ff;
+}
+
+.phone-input:focus {
+  border-color: #cf9fff;
+  box-shadow: none;
+}
+
+.css-yk16xz-control {
+  border: none !important;
+  border-bottom: 2px solid #e9d4ff !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  background-color: transparent !important;
+  color: #cf9fff !important;
+  height: auto !important;
+}
+
+.css-1okebmr-indicatorSeparator {
+  display: none !important;
+}
+
+.css-26l3qy-menu {
+  background-color: #f9f9f9 !important;
+  border: 2px solid #e9d4ff !important;
+  border-radius: 5px !important;
+  max-height: 200px !important;
+  overflow-y: auto !important;
+}
+
+.css-4ljt47-MenuList {
+  padding: 0 !important;
+}
+
+.css-1n7v3ny-option {
+  padding: 10px !important;
+  background-color: #fff !important;
+  color: #6c757d !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.css-1n7v3ny-option:hover {
+  background-color: #cf9fff !important;
+  color: #fff !important;
+}
+
+.css-1n7v3ny-option:active {
+  background-color: #cf9fff !important;
+  color: #fff !important;
+}
+
+.css-1uccc91-singleValue {
+  color: #6c757d !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.submit-button {
+  background-color: #d8a1f9;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.submit-button:hover {
+  background-color: #b76ed6;
+}
+
+.support-text {
+  margin-left: 20px;
+  font-size: 16px;
+}

@@ -1,7 +1,11 @@
 import React from 'react';
 import '../question.scss';
 
-const question8 = () => {
+const question8 = ({ handleNext }) => {
+  const handleSubmit = (event) => {
+    event.preventDefault(); // Prevent the form from reloading the page
+    handleNext(); // Call the handleNext function to go to the next question
+  };
   return (
     <div className='question'>
     <div className="question-title">
@@ -10,7 +14,7 @@ const question8 = () => {
     </div>
 
     <div className="question-content">
-      <form>
+    <form onSubmit={handleSubmit}>
         <span>
           I hereby acknowledge that this application form was completed by me (the individual seeking to enroll in Metana) and I did not receive help from any external sources. The responses submitted are entirely my own and based on my own reasoning. Also, I opt in to receive communication messages from Metana about my application.
         </span>

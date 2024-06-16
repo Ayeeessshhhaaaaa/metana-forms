@@ -2,7 +2,11 @@ import React from 'react';
 import './question6.scss';
 
 
-const Question6 = () => {
+const Question6 = ({ handleNext }) => {
+  const handleSubmit = (event) => {
+    event.preventDefault(); // Prevent the form from reloading the page
+    handleNext(); // Call the handleNext function to go to the next question
+  };
   return (
     <div className='question6'>
     <div className="question-title">
@@ -11,7 +15,7 @@ const Question6 = () => {
     </div>
 
     <div className="question-content">
-      <form>
+    <form onSubmit={handleSubmit}>
         <div className="form-group">
             <div className="custom-radio">
                   <input type="radio" id="exp-1" value="No experience" name="experience" onChange={(e) => setSelectedOption(e.target.value)} />

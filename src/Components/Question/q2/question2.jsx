@@ -1,7 +1,12 @@
 import React from "react";
 import "../question.scss";
 
-const Question2 = () => {
+const Question2 = ({ handleNext }) => {
+  const handleSubmit = (event) => {
+    event.preventDefault(); // Prevent the form from reloading the page
+    handleNext(); // Call the handleNext function to go to the next question
+  };
+
   return (
     <div className="question">
       <div className="question-title">
@@ -12,7 +17,7 @@ const Question2 = () => {
       </div>
 
       <div className="question-content">
-        <form>
+      <form onSubmit={handleSubmit}>
           <span>This is how we'll contact you</span>
           <div className="form-group">
             <input
