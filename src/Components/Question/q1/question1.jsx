@@ -6,7 +6,7 @@ const Question1 = ({ handleNext }) => {
     event.preventDefault(); // Prevent the form from reloading the page
     handleNext(); // Call the handleNext function to go to the next question
   };
-  
+
   return (
     <div className="question">
       <div className="question-title">
@@ -17,7 +17,7 @@ const Question1 = ({ handleNext }) => {
       </div>
 
       <div className="question-content">
-      <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="firstName" className="form-label">
               First name

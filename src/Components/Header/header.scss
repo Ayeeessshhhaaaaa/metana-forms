@@ -1,22 +1,22 @@
-.header{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 32px;
-    position: absolute;
-    top: 0;
-    left: 0;
+.header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 32px;
+  position: absolute;
+  top: 0;
+  left: 0;
 
-    .header-image-component{
-        min-height: 40px;
-        display: flex;
-        align-items: center;
-        .logo{
-            max-width: 120px;
-            max-height: 40px;
-            width: auto;
-            height: auto;
-        }
+  .header-image-component {
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    .logo {
+      max-width: 120px;
+      max-height: 40px;
+      width: auto;
+      height: auto;
     }
+  }
 }

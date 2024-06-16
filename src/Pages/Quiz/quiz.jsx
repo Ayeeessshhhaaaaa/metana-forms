@@ -1,27 +1,32 @@
-import React, { useState, useEffect } from 'react';
-import './quiz.scss';
+import React, { useState, useEffect } from "react";
+import "./quiz.scss";
 
-import Question1 from '../../Components/Question/q1/question1';
-import Question2 from '../../Components/Question/q2/question2';
-import Question3 from '../../Components/Question/q3/question3';
-import Question4 from '../../Components/Question/q4/question4';
-import Question5 from '../../Components/Question/q5/question5';
-import Question6 from '../../Components/Question/q6/question6';
-import Question7 from '../../Components/Question/q7/question7';
-import Question8 from '../../Components/Question/q8/question8';
-import Question9 from '../../Components/Question/q9/question9';
+import Question1 from "../../Components/Question/q1/question1";
+import Question2 from "../../Components/Question/q2/question2";
+import Question3 from "../../Components/Question/q3/question3";
+import Question4 from "../../Components/Question/q4/question4";
+import Question5 from "../../Components/Question/q5/question5";
+import Question6 from "../../Components/Question/q6/question6";
+import Question7 from "../../Components/Question/q7/question7";
+import Question8 from "../../Components/Question/q8/question8";
+import Question9 from "../../Components/Question/q9/question9";
 
 const Quiz = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-  const [animationClass, setAnimationClass] = useState('slideInFromBottom');
-  const [direction, setDirection] = useState('forward');
+  const [animationClass, setAnimationClass] = useState("slideInFromBottom");
+  const [direction, setDirection] = useState("forward");
 
   useEffect(() => {
-    if (animationClass === 'slideOutToTop' || animationClass === 'slideOutToBottom') {
+    if (
+      animationClass === "slideOutToTop" ||
+      animationClass === "slideOutToBottom"
+    ) {
       const timer = setTimeout(() => {
-        setAnimationClass(direction === 'forward' ? 'slideInFromBottom' : 'slideInFromTop');
-        setCurrentQuestionIndex(prevIndex => 
-          direction === 'forward' ? prevIndex + 1 : prevIndex - 1
+        setAnimationClass(
+          direction === "forward" ? "slideInFromBottom" : "slideInFromTop"
+        );
+        setCurrentQuestionIndex((prevIndex) =>
+          direction === "forward" ? prevIndex + 1 : prevIndex - 1
         );
       }, 500);
 
@@ -31,15 +36,15 @@ const Quiz = () => {
 
   const handleNext = () => {
     if (currentQuestionIndex < questionComponents.length - 1) {
-      setDirection('forward');
-      setAnimationClass('slideOutToTop');
+      setDirection("forward");
+      setAnimationClass("slideOutToTop");
     }
   };
 
   const handlePrevious = () => {
     if (currentQuestionIndex > 0) {
-      setDirection('backward');
-      setAnimationClass('slideOutToBottom');
+      setDirection("backward");
+      setAnimationClass("slideOutToBottom");
     }
   };
 
@@ -56,7 +61,7 @@ const Quiz = () => {
   ];
 
   return (
-    <div className='quiz-container'>
+    <div className="quiz-container">
       <div className="questions-container">
         <div className={`questions ${animationClass}`}>
           {questionComponents[currentQuestionIndex]}
@@ -64,17 +69,31 @@ const Quiz = () => {
       </div>
       <div className="bottom-control">
         <div className="btn-group" role="group" aria-label="Basic example">
-          <button type="button" className="btn btn-primary" onClick={handlePrevious} disabled={currentQuestionIndex === 0}>
+          <button
+            type="button"
+            className="btn btn-primary"
+            onClick={handlePrevious}
+            disabled={currentQuestionIndex === 0}
+          >
             <span className="material-symbols-outlined">keyboard_arrow_up</span>
           </button>
-          <button type="button" className="btn btn-primary" onClick={handleNext} disabled={currentQuestionIndex === questionComponents.length - 1}>
-            <span className="material-symbols-outlined">keyboard_arrow_down</span>
+          <button
+            type="button"
+            className="btn btn-primary"
+            onClick={handleNext}
+            disabled={currentQuestionIndex === questionComponents.length - 1}
+          >
+            <span className="material-symbols-outlined">
+              keyboard_arrow_down
+            </span>
           </button>
         </div>
-        <a className="btn btn-primary" href="#" role="button">Powered by <strong>Typeform</strong></a>
+        <a className="btn btn-primary" href="#" role="button">
+          Powered by <strong>Typeform</strong>
+        </a>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Quiz;

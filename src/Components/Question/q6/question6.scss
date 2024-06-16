@@ -1,138 +1,136 @@
 .question6 {
-    width: 100%;
-    width: 790px;
-    .question-title {
+  width: 100%;
+  width: 790px;
+  .question-title {
+    display: flex;
+    align-items: center;
+
+    span {
+      color: #cf9fff;
       display: flex;
       align-items: center;
-  
+      font-size: 20px;
+      margin-right: 6px;
+    }
+  }
+
+  .question-content {
+    text-align: left;
+    width: 100%;
+    margin-left: 45px;
+    margin-top: 30px;
+
+    .form-group-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    /* question8.scss */
+    .custom-radio {
+      width: 650px;
+      background-color: #faf5ff;
+      margin-bottom: 10px;
+      border-radius: 6px;
+      border: 2px solid #edddff;
+      color: #d8b0ff;
+      font-size: 18px;
+
       span {
-        color: #cf9fff;
+        padding: 4px 6px;
+        border-radius: 4px;
+        background-color: white;
+        color: #d8b0ff;
+        font-size: 12px;
+        margin-right: 8px;
+        border: 2px solid #d8b0ff;
+      }
+
+      input {
+        display: none;
+      }
+
+      input:checked + .custom-control-label {
+        background-color: #d8b0ff; // Change the background color when checked
+        color: white; // Change the text color when checked
+        border-color: #d8b0ff; // Change the border color when checked
+      }
+
+      input:checked + .custom-control-label span {
+        background-color: white;
+        color: #d8b0ff;
+      }
+
+      &:hover {
+        background-color: #efdfff;
+      }
+
+      .custom-control-label {
+        width: 100%;
+        padding: 12px 20px;
+        border-radius: 6px;
+        border: 2px solid transparent;
         display: flex;
         align-items: center;
-        font-size: 20px;
-        margin-right: 6px;
+        cursor: pointer;
+        transition: background-color 0.3s, border-color 0.3s, color 0.3s;
       }
     }
-  
-    .question-content {
-      text-align: left;
+
+    .form-label {
+      font-size: 18px;
+      font-weight: bold;
+      color: #cf9fff;
+    }
+
+    .form-input {
+      font-size: 24px;
+      color: #cf9fff;
+      border: none;
+      border-bottom: 2px solid #e9d4ff;
+      border-radius: 0;
+      background-color: transparent;
+      padding: 10px 0;
+      transition: border-color 0.3s;
       width: 100%;
-      margin-left: 45px;
-      margin-top: 30px;
-  
-      .form-group-row{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-      }
-  
-      /* question8.scss */
-      .custom-radio {
-        width: 650px;
-        background-color: #faf5ff;
-        margin-bottom: 10px;
-        border-radius: 6px;
-        border: 2px solid #edddff;
-        color: #d8b0ff;
-        font-size: 18px;
-        
-        span {
-          padding: 4px 6px;
-          border-radius: 4px;
-          background-color: white;
-          color: #d8b0ff;
-          font-size: 12px;
-          margin-right: 8px;
-          border: 2px solid #d8b0ff;
-        }
-  
-        input {
-          display: none;
-        }
-  
-        input:checked + .custom-control-label {
-          background-color: #d8b0ff; // Change the background color when checked
-          color: white; // Change the text color when checked
-          border-color: #d8b0ff; // Change the border color when checked
-        }
-  
-        input:checked + .custom-control-label span {
-          background-color: white;
-          color: #d8b0ff;
-        }
-  
-        &:hover {
-          background-color: #efdfff;
-        }
-  
-        .custom-control-label {
-          width: 100%;
-          padding: 12px 20px;
-          border-radius: 6px;
-          border: 2px solid transparent;
-          display: flex;
-          align-items: center;
-          cursor: pointer;
-          transition: background-color 0.3s, border-color 0.3s, color 0.3s;
-        }
-      }
-  
-      .form-label {
-        font-size: 18px;
-        font-weight: bold;
-        color: #cf9fff;
-      }
-  
-  
-      .form-input {
-        font-size: 24px;
-        color: #cf9fff;
+    }
+
+    .form-input::placeholder {
+      color: #e9d4ff;
+    }
+
+    .form-input:focus {
+      border-color: #cf9fff;
+      box-shadow: none;
+    }
+
+    .button-container {
+      display: flex;
+      flex-direction: row;
+      margin-top: 42px;
+
+      .submit-button {
+        background-color: #cf9fff;
         border: none;
-        border-bottom: 2px solid #e9d4ff;
-        border-radius: 0;
-        background-color: transparent;
-        padding: 10px 0;
-        transition: border-color 0.3s;
-        width: 100%;
+        color: white;
+        padding: 6px 20px;
+        font-size: 18px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+        margin-right: 6px;
+        font-weight: bold;
       }
-  
-      .form-input::placeholder {
-        color: #e9d4ff;
+
+      .submit-button:hover {
+        background-color: #dab4ff;
       }
-  
-      .form-input:focus {
-        border-color: #cf9fff;
-        box-shadow: none;
-      }
-  
-      .button-container {
-        display: flex;
-        flex-direction: row;
-        margin-top: 42px;
-  
-        .submit-button {
-          background-color: #cf9fff;
-          border: none;
-          color: white;
-          padding: 6px 20px;
-          font-size: 18px;
-          cursor: pointer;
-          border-radius: 5px;
-          transition: background-color 0.3s;
-          margin-right: 6px;
-          font-weight: bold;
-        }
-  
-        .submit-button:hover {
-          background-color: #dab4ff;
-        }
-  
-        .support-text {
-          margin-top: 10px;
-          font-size: 12px;
-          color: black;
-        }
+
+      .support-text {
+        margin-top: 10px;
+        font-size: 12px;
+        color: black;
       }
     }
   }
-  
+}

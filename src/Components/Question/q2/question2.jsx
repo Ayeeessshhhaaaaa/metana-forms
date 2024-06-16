@@ -3,8 +3,8 @@ import "../question.scss";
 
 const Question2 = ({ handleNext }) => {
   const handleSubmit = (event) => {
-    event.preventDefault(); // Prevent the form from reloading the page
-    handleNext(); // Call the handleNext function to go to the next question
+    event.preventDefault(); 
+    handleNext();
   };
 
   return (
@@ -17,7 +17,7 @@ const Question2 = ({ handleNext }) => {
       </div>
 
       <div className="question-content">
-      <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit}>
           <span>This is how we'll contact you</span>
           <div className="form-group">
             <input

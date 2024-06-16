@@ -2,7 +2,6 @@ import React from "react";
 import "./home.scss";
 import { useNavigate } from "react-router-dom";
 
-
 const Home = () => {
   const navigate = useNavigate();
 
@@ -27,7 +26,9 @@ const Home = () => {
           <span>- Takes 4 mins on average</span>
         </p>
         <div className="button-container">
-          <button onClick={handleStartJourney}><span>Start Your Journey</span></button>
+          <button onClick={handleStartJourney}>
+            <span>Start Your Journey</span>
+          </button>
           <div className="support-text">
             press <strong>Enter ↵</strong>
           </div>
