@@ -26,7 +26,6 @@
       gap: 20px;
     }
 
-    /* question8.scss */
     .custom-radio {
       width: 650px;
       background-color: #faf5ff;
@@ -51,9 +50,9 @@
       }
 
       input:checked + .custom-control-label {
-        background-color: #d8b0ff; // Change the background color when checked
-        color: white; // Change the text color when checked
-        border-color: #d8b0ff; // Change the border color when checked
+        background-color: #d8b0ff; 
+        color: white; 
+        border-color: #d8b0ff; 
       }
 
       input:checked + .custom-control-label span {

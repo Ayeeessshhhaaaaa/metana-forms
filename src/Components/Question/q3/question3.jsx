@@ -218,8 +218,8 @@ const Question3 = ({ handleNext }) => {
   };
 
   const handleSubmit = (event) => {
-    event.preventDefault(); // Prevent the form from reloading the page
-    handleNext(); // Call the handleNext function to go to the next question
+    event.preventDefault(); 
+    handleNext(); 
   };
 
   return (

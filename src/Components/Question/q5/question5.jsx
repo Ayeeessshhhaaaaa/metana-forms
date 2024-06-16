@@ -13,15 +13,10 @@ const Question5 = ({ handleNext }) => {
     );
   };
 
-  const onSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission, e.g., save the selected options
-    console.log("Selected options:", selectedOptions);
-  };
 
   const handleSubmit = (event) => {
-    event.preventDefault(); // Prevent the form from reloading the page
-    handleNext(); // Call the handleNext function to go to the next question
+    event.preventDefault(); 
+    handleNext(); 
   };
 
   return (
